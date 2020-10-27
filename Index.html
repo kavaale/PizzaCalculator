@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function calcPizza() {
+            var toppings = prompt("How many toppings do you want?");
+            var coworkers = prompt("How many coworkers are paying?");
+            var pizza = (15 + 1.25 * toppings) / coworkers;
+            alert("You and your coworkers are paying: $" + pizza)
+        }
+    </script>
+    <button onclick="calcPizza()">The pizza button!</button>
+</body>
+</html>
