@@ -5,14 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
+    <label>How many toppings do you want?</label>
+    <input id="topping" type="number"><br>
+
+    <label>How many coworkers are paying?</label>
+    <input id="coworkers" type="number">
+    <!--<script>
         function calcPizza() {
             var toppings = prompt("How many toppings do you want?");
             var coworkers = prompt("How many coworkers are paying?");
             var pizza = (15 + 1.25 * toppings) / coworkers;
             alert("You and your coworkers are paying: $" + pizza)
         }
-    </script>
-    <button onclick="calcPizza()">The pizza button!</button>
+
+    </script>-->
+    <button id="clickme">The pizza button!</button>
+    <p class="output">
+        Your pizza will cost $<span id="pizza"></span>
+    </p>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="stuff.js"></script>
 </body>
+
 </html>
